@@ -25,4 +25,4 @@ app.get("/",(req,res)=>{
 app.use("/buildings",BuildingsRouter)
 
 
-app.listen(3000,()=>console.log("hellow"));
+app.listen(PORT,()=>console.log("hellow"));
