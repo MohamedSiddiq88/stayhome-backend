@@ -2,6 +2,7 @@ import express from 'express'
 import dotenv from "dotenv"
 import cors from "cors";
 import {BuildingsRouter} from "./Routers/buildings.js"
+import { RentersRouter } from './Routers/renters.js';
 
 
 //configure the envirenment.
@@ -22,7 +23,8 @@ app.get("/",(req,res)=>{
     res.send("Welcome to stayhome backend")
 })
 
-app.use("/buildings",BuildingsRouter)
+app.use("/buildings",BuildingsRouter);
+app.use("/renters",RentersRouter);
 
 
 app.listen(PORT,()=>console.log("hellow"));
