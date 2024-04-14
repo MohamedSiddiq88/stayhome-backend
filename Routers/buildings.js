@@ -1,6 +1,6 @@
 import express from "express";
-import { addRenters, getAllBuildings } from "../Controllers/buildings.js";
-
+import {  getAllBuildings } from "../Controllers/buildings.js";
+import { addRenters } from "../Controllers/renters.js";
 const router = express.Router();
 
 router.get("/all", async (req, res) => {
