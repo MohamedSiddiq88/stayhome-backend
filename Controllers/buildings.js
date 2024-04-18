@@ -7,5 +7,6 @@ export function getAllBuildings() {
   }
 
   export function addBuildings(building) {
-    return client.db("homestay").collection("buildings").insertOne({...building});
+    const { name, buildingNumber } = building;
+    return client.db("homestay").collection("buildings").insertOne({name, buildingNumber});
   }
