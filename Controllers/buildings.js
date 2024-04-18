@@ -7,5 +7,5 @@ export function getAllBuildings() {
   }
 
   export function addBuildings(building) {
-    return client.db("homestay").collection("buildings").insertOne(building);
+    return client.db("homestay").collection("buildings").insertOne(...building);
   }
