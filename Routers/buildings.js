@@ -16,7 +16,7 @@ router.get("/all", async (req, res) => {
     }
   });
 
-  router.post("/add", async (req, res) => {
+  router.put("/add", async (req, res) => {
     try {
       const newBuilding = req.body;
       if (!newBuilding) {
